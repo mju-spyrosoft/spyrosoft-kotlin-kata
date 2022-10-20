@@ -17,6 +17,7 @@ fun beginsWithCapitalA(x: List<String>): Int =
 
 //Return type cant be omitted in single-expression functions
 fun squaredWithoutType(x: Int) = x*x
+
 /* won't compile, no return type on body function
 fun beginsWithCapitalA2(x: List<String>){
     return x.asSequence()
@@ -26,9 +27,7 @@ fun beginsWithCapitalA2(x: List<String>){
  */
 
 //Void return type from java is "Unit"
-fun printSquared(x: Int): Unit {
-    println(x * x)
-}
+fun printSquared(x: Int): Unit = println(x * x)
 
 //Local functions from like in js
 fun nestedFunction(){
@@ -42,4 +41,4 @@ fun nestedFunction(){
 }
 
 //Generics
-fun <T> singletonList(item: T): List<T>? { return null }
+fun <T> singletonList(item: T): List<T> = listOf(item)

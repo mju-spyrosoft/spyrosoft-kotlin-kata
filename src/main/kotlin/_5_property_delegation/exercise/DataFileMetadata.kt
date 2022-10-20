@@ -4,7 +4,9 @@ import java.io.File
 import java.io.IOException
 import java.nio.file.Files
 
-
+/**
+ * Look at DataFileMetadataJ. Rewrite it in kotlin.
+ */
 class DataFileMetadata(private val file: File) {
 
     val contents: String = ""

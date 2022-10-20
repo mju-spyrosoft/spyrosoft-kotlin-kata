@@ -31,7 +31,6 @@ class DataFileMetadataJ {
             loadContents();
         }
         return contents;
-
     }
 
     public static void main(String[] args) throws IOException {

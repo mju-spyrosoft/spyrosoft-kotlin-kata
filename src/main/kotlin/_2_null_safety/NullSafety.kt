@@ -1,4 +1,4 @@
-package _2_null_saftey
+package _2_null_safety
 
 /**
  * Null safety built into language

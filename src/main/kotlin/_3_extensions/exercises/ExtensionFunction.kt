@@ -1,8 +1,7 @@
 package _3_extensions.exercises
 
 /**
- * 
- * Learn about extension functions.
+ *
  * Look at the java code and implement the extension functions
  *
  * Then implement the extension functions Int.r() and Pair.r() and make them convert Int and Pair to a RationalNumber.

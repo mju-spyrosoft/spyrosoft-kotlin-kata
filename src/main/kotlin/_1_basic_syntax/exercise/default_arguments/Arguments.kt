@@ -1,8 +1,7 @@
 package _1_basic_syntax.exercise.default_arguments
 
 /**
- * Arguments.java, You can replace all foo()  overloads with one function in Kotlin.
- * Change the declaration of the foo function in a way that makes the code using foo compile. Use default and named arguments.
+ * Look at the Arguments.java. Write your own foo function in kotlin. Replace all java foo() overloads with just one function in Kotlin.
  *
  * https://kotlinlang.org/docs/functions.html#default-arguments
  */

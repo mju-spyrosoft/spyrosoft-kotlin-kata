@@ -1,4 +1,4 @@
-package _2_null_saftey.exercise.null_not_allowed
+package _2_null_safety.exercise.null_not_allowed
 
 /**
  * Java programmer that wrote null_allowed had revelation about why nulls are bad and decided to remove them from his codebase.
@@ -30,7 +30,5 @@ fun main() {
     }
     sendMessageToClient(null, "hey kata", anonymousMailer)  //Should fail at compilation
     sendMessageToClient(client, null, anonymousMailer)            //Should fail at compilation
-
-
 
 }

@@ -7,7 +7,7 @@ class PropertyGreeter() {
 
     var greeting: String by GreeterDelegate()
 
-    public fun greet() = println(greeting)
+    fun greet() = println(greeting)
 }
 
 class GreeterDelegate() {
@@ -20,7 +20,27 @@ class GreeterDelegate() {
     }
 }
 
+class LazyGreeter(){
+    val greeting by lazy {
+        brainComputeValue()
+    }
+
+    fun greet() = println(greeting)
+
+
+    private fun brainComputeValue(): String {
+        println("Brain working hard on the best greeting possible")
+        return "Hello kata, you look beautiful today"
+    }
+}
+
 fun main() {
-    PropertyGreeter().greet()
-    PropertyGreeter().greeting = "Hate kata"
+    val propertyGreeter = PropertyGreeter()
+    propertyGreeter.greet()
+    propertyGreeter.greeting = "Hate kata"
+
+    val lazyGreeter = LazyGreeter()
+    lazyGreeter.greet()
+    lazyGreeter.greet()
+    lazyGreeter.greet()
 }

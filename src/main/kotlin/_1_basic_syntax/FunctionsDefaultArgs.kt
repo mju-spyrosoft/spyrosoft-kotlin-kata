@@ -18,6 +18,7 @@ fun main() {
     printReformat("hey spyro-soft", replaceSpacesWithUnderscore = true)
     printReformat("hey spyro-soft", upperCaseFirstLetter = true)
     printReformat("hey spyro-soft", true, true)
+
     //Many arguments of the same type can be confusing. Want to be more explicit?
     printReformat(
         "hey spyro-soft",

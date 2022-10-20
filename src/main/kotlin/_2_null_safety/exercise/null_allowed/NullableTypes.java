@@ -1,4 +1,4 @@
-package _2_null_saftey.exercise.null_allowed;
+package _2_null_safety.exercise.null_allowed;
 
 public class NullableTypes {
     public void sendMessageToClient(

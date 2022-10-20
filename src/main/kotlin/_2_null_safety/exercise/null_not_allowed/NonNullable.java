@@ -1,4 +1,4 @@
-package _2_null_saftey.exercise.null_not_allowed;
+package _2_null_safety.exercise.null_not_allowed;
 
 
 public class NonNullable {

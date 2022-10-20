@@ -21,18 +21,18 @@ public class Arguments {
         return foo(name, 42);
     }
 
-    public static void useFoo() {
-        var defaultArguments = new Arguments();
+    public void useFoo() {
         List.of(
-                defaultArguments.foo("a"),
-                defaultArguments.foo("b", 1),
-                defaultArguments.foo("c", true),
-                defaultArguments.foo("d", 2, true)
+                this.foo("a"),
+                this.foo("b", 1),
+                this.foo("c", true),
+                this.foo("d", 2, true)
         );
 
     }
 
     public static void main(String[] args) {
-        Arguments.useFoo();
+        var arguments = new Arguments();
+        arguments.useFoo();
     }
 }
